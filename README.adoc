@@ -1,0 +1,49 @@
+:author: sangmin lee
+:email: <nalsm0518@gmail.com>
+:revision: 2021.33.0
+:icons: font
+:main-title: Tutorial
+:sub-title: Kotlin-based R2DBC & JOOQ
+:description: 코틀린 기반의 R2DBC 및 JOOQ 튜토리얼 프로젝트 입니다.
+:git_service: https://github.com/LeeSM0518/
+:project_name: r2dbc-and-jooq-tutorial
+:project_license: Copyright
+:experimental:
+:hardbreaks:
+
+
+= {main-title}: {sub-title}
+
+image:https://img.shields.io/badge/version-{revision}-blue.svg[link="./CHANGELOG",title="version"]  image:https://img.shields.io/badge/license-{project_license}-lightgrey.svg[link="./LICENSE",title="license"]
+
+
+== What is the Project
+
+{description}
+
+== Building
+
+. Clone a copy of the repository:
++
+[subs="attributes"]
+----
+$ git clone {git_service}{project_name}.git
+----
++
+
+. Change to the project directory:
++
+[subs="attributes"]
+----
+$ cd {project_name}
+----
++
+
+
+== License
+
+* LICENSE: link:./LICENSE[{project_license}]
+
+== Contributors
+
+* {author} {email}

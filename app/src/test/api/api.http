@@ -1,0 +1,39 @@
+###
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+
+{
+  "username": "gildong{{$randomInt}}",
+  "role": "ADMIN"
+}
+
+> {%
+  client.global.set("account_uuid", response.body.information.id);
+%}
+
+###
+GET http://localhost:8080/api/accounts/{{account_uuid}}
+Content-Type: application/json
+
+###
+
+PATCH http://localhost:8080/api/accounts/{{account_uuid}}
+Content-Type: application/json
+
+{
+  "name": "gildong",
+  "code": "+82",
+  "cellPhone": "01012341234",
+  "email": "gildong@kpcell.com"
+}
+
+###
+
+GET http://localhost:8080/api/accounts
+Content-Type: application/json
+
+###
+
+DELETE http://localhost:8080/api/accounts/{{account_uuid}}
+Content-Type: application/json
+

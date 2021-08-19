@@ -1,0 +1,13 @@
+spring:
+  jooq:
+    sql-dialect: postgres
+  r2dbc:
+    url: r2dbc:postgresql://127.0.0.1:15432/database?schema=public
+    username: username
+    password: password
+
+logging:
+  level:
+    org.springframework.r2dbc: TRACE
+    io.r2dbc.postgresql.QUERY: TRACE
+    io.r2dbc.postgresql.PARAM: TRACE
